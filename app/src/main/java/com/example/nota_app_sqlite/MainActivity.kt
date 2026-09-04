@@ -1,6 +1,7 @@
 package com.example.nota_app_sqlite
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nota_app_sqlite.databinding.ActivityMainBinding
 
@@ -12,5 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.fabAgregarNota.setOnClickListener {
+            Toast.makeText(this, "Has presionado en el FAB", Toast.LENGTH_SHORT).show()
+        }
     }
 }
