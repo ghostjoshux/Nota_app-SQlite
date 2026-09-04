@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Nota_appSQlite" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/morado</item>
+        <item name="colorPrimaryDark">@color/morado</item>
+        <item name="colorAccent">@color/morado</item>
+        <item name="android:statusBarColor">@color/morado</item>
+    </style>
+</resources>
