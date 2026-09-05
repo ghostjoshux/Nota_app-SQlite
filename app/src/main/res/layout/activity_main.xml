@@ -18,6 +18,6 @@
         android:src="@drawable/ic_agregar_nota"
         android:backgroundTint="@color/morado"
         app:tint="@color/white"
-        android:contentDescription="Agregar nota" />
+        android:contentDescription="Agregar nota"/>
 
 </RelativeLayout>

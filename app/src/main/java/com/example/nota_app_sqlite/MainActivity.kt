@@ -1,5 +1,6 @@
 package com.example.nota_app_sqlite
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.fabAgregarNota.setOnClickListener {
             Toast.makeText(this, "Has presionado en el FAB", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(applicationContext, AgregarNotaActivity::class.java))
         }
     }
 }
