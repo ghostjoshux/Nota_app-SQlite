@@ -23,7 +23,7 @@ class AgregarNotaActivityBinding : AppCompatActivity() {
         binding.GuardarNota.setOnClickListener {
             val titulo = binding.etTitulo.text.toString()
             val descripcion = binding.etDescripcion.text.toString()
-            if (titulo.isNotEmpty() && descripcion.isEmpty()) {
+            if (titulo.isNotEmpty() && descripcion.isNotEmpty()) {
                 guardarNota(titulo, descripcion)
             } else {
                 Toast.makeText(applicationContext, "LLENE LOS CAMPOS", Toast.LENGTH_SHORT).show()
