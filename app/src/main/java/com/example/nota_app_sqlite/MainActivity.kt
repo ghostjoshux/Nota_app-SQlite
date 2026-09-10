@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.fabAgregarNota.setOnClickListener {
             Toast.makeText(this, "Has presionado en el FAB", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(applicationContext, AgregarNotaActivity::class.java))
+            startActivity(Intent(applicationContext, AgregarNotaActivityBinding::class.java))
         }
     }
 }
