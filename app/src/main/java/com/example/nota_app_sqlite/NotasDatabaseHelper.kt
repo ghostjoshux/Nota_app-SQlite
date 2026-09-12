@@ -80,7 +80,7 @@ class NotasDatabaseHelper(context: Context) : SQLiteOpenHelper(
     fun updateNota(nota: Nota) {
         val db = writableDatabase
         val values = ContentValues().apply {
-            put(COLUMN_TITLE, nota.id)
+            put(COLUMN_TITLE, nota.titulo)
             put(COLUMN_DESCRIPTION, nota.descripcion)
         }
         val whereClause = "$COLUMN_ID = ?"
