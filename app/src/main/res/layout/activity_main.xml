@@ -38,6 +38,7 @@
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/morado"
         app:tint="@color/white"
+        android:src="@drawable/ic_agregar_nota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

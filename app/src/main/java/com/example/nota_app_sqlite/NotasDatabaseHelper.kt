@@ -89,6 +89,14 @@ class NotasDatabaseHelper(context: Context) : SQLiteOpenHelper(
         db.close()
     }
 
+    fun deleteNota(idNota: Int) {
+        val db = writableDatabase
+        val whereClause = "$COLUMN_ID = ?"
+        val whereArgs = arrayOf(idNota.toString())
+        db.delete(TABLE_NAME, whereClause, whereArgs)
+        db.close()
+    }
+
 
 
 
